@@ -4,7 +4,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew cask install iter2
 
 brew cask install skype
-brew cask install --caskroom=/Applications google-chrome  # 機能を使うので/Applicationsに入れる必要がある
+brew cask install --caskroom=/Applications google-chrome  # sanbox機能を使うので/Applicationsに入れる必要がある
 brew cask install google-drive
 brew cask install google-japanese-ime
 
