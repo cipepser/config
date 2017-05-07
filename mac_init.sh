@@ -26,6 +26,22 @@ git config --global user.email "respepic@gmail.com"
 git config --global color.ui auto
 git config --global alias.co checkout
 
+# fish
+brew install fish
+chsh -s /usr/local/bin/fishs
+# nos-standard shellのエラーのときのみ
+# sudo echo 'usr/local/bin/fish' > /etc/shells
+# oh-my-fish
+curl -L http://get.oh-my.fish | fish
+
+# gpq
+brew install ghq
+# peco
+brew intall peco # fish上で、ctrl+rでコマンド履歴を呼び出すため
+# hub
+brew install hub
+
+
 # npm
 npm install -g jshint
 
