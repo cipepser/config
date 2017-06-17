@@ -1,0 +1,60 @@
+"*":
+  core:
+    customFileTypes:
+      "source.ini": [
+        ".buckconfig"
+        ".flowconfig"
+        ".hgrc"
+      ]
+      "source.json": [
+        "BUCK.autodeps"
+      ]
+      "source.python": [
+        "BUCK"
+      ]
+    disabledPackages: [
+      "symbols-view"
+      "japanese-wrap"
+      "tree-view"
+      "atom-ctags"
+      "go-debug"
+    ]
+    telemetryConsent: "no"
+  editor:
+    fontSize: 12
+    invisibles: {}
+    lineHeight: 1.4
+    showInvisibles: true
+  "exception-reporting":
+    userId: "0f9e3be4-46f8-4118-95d6-644d4e6785d9"
+  "file-types":
+    fish: "source.shell"
+  "go-debug":
+    dlvPath: "/usr/local/Cellar/delve/0.12.2/bin/dlv"
+    panelInitialVisible: true
+  "go-plus":
+    config:
+      gopath: "/Users/respepic/.go"
+    disabledBundledPackages: [
+      "go-debug"
+    ]
+    panel:
+      currentHeight: "24.425574425574425vh"
+      currentWidth: "32.133213321332136vw"
+      fontSize: "1.0em"
+      orientation: "vertical"
+  "linter-ui-default":
+    panelHeight: 29
+    showPanel: true
+  "save-session":
+    dataSaveFolder: "/Users/respepic/.atom/packages/save-session/projects"
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ensureSingleTrailingNewline: false
+    ignoreWhitespaceOnlyLines: true
+".go.source":
+  editor:
+    softWrap: false
+    softWrapAtPreferredLineLength: true
+    softWrapHangingIndent: 7
