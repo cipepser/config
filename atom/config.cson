@@ -17,7 +17,6 @@
       "japanese-wrap"
       "tree-view"
       "atom-ctags"
-      "go-debug"
     ]
     telemetryConsent: "no"
   editor:
@@ -40,7 +39,7 @@
     ]
     panel:
       currentHeight: "24.425574425574425vh"
-      currentWidth: "32.133213321332136vw"
+      currentWidth: "29.452529452529454vw"
       fontSize: "1.0em"
       orientation: "vertical"
   "linter-ui-default":
