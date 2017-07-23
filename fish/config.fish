@@ -12,6 +12,7 @@ set fish_theme chain
 
 # golang
 set -x GOPATH $HOME/.go
+set -x PATH $PATH $GOPATH/bin
 
 # see command history by binding prco to Ctrl+r
 set fish_plugins theme peco
