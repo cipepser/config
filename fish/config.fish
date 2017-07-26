@@ -14,6 +14,10 @@ set fish_theme chain
 set -x GOPATH $HOME/.go
 set -x PATH $PATH $GOPATH/bin
 
+# rust
+set -x PATH $PATH $HOME/.cargo/bin
+
+
 # see command history by binding prco to Ctrl+r
 set fish_plugins theme peco
 function fish_user_key_bindings
