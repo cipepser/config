@@ -39,7 +39,7 @@
     ]
     panel:
       currentHeight: "24.425574425574425vh"
-      currentWidth: "38.86904761904762vw"
+      currentWidth: "32.09090909090909vw"
       fontSize: "1.0em"
       orientation: "vertical"
   "linter-ui-default":
