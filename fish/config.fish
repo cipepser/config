@@ -39,3 +39,6 @@ alias d='docker'
 alias dm='docker-machine'
 alias dp='docker ps'
 alias di='docker images'
+
+# python
+alias p='python'
