@@ -17,6 +17,8 @@ set -x PATH $PATH $GOPATH/bin
 # rust
 set -x PATH $PATH $HOME/.cargo/bin
 
+# python
+set -x PATH $PATH /usr/local/opt/python/libexec/bin
 
 # see command history by binding prco to Ctrl+r
 set fish_plugins theme peco
