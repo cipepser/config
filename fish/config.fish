@@ -20,11 +20,16 @@ set -x PATH $PATH $HOME/.cargo/bin
 # python
 set -x PATH $PATH /usr/local/opt/python/libexec/bin
 
-# see command history by binding prco to Ctrl+r
 set fish_plugins theme peco
+
 function fish_user_key_bindings
+  # see command history by binding prco to Ctrl+r
   bind \cr peco_select_history
+  
+  # move the directory which is cloned by ghq
+  bind \ce select_ghq_cd
 end
+
 
 #-----------------------------------------------------
 # Aliases
