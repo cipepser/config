@@ -27,7 +27,10 @@ function fish_user_key_bindings
   bind \cr peco_select_history
   
   # move the directory which is cloned by ghq
-  bind \ce select_ghq_cd
+  bind \cg select_ghq_cd
+  
+  # move to the recent directory
+  bind \cx peco_recentd
 end
 
 
