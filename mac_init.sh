@@ -19,12 +19,20 @@ brew cask install karabiner # キーリマップ
 
 brew cask install symboliclinker
 brew install nodejs
+brew install git
+
+# set path to this config derectory
+# シンボリックリンクを貼るためなので、一時的でOK
+# 実行はgit cloneしたconfig repo直下で行うこと
+set -x CONFIG (pwd)
 
 # git
 git config --global user.name "cipepser"
 git config --global user.email "respepic@gmail.com"
 git config --global color.ui auto
 git config --global alias.co checkout
+rm ~/.gitconfig
+ln -s $CONFIG/git/.gitconfig ~/.gitconfig
 
 # fish
 brew install fish
@@ -33,6 +41,12 @@ chsh -s /usr/local/bin/fishs
 # sudo echo 'usr/local/bin/fish' > /etc/shells
 # oh-my-fish
 curl -L http://get.oh-my.fish | fish
+rm ~/.config/fish/config.fish
+ln -s  $CONFIG/fish/config.fish ~/.config/fish/config.fish
+
+# atom
+rm ~/.atom/keymap.cson
+ln -s $CONFIG/atom/keymap.cson ~/.atom/keymap.cson
 
 # gpq
 brew install ghq
@@ -56,3 +70,8 @@ alias ctags="`brew --prefix`/bin/ctags"
 # ghqしたrepoへcdするために必要
 git clone https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
+
+# mycli
+brew install mycli
+rm ~/.myclirc
+ln -s $CONFIG/mycli/.myclirc ~/.myclirc
