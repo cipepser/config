@@ -1,0 +1,12 @@
+[user]
+	name = cipepser
+	email = respepic@gmail.com
+[color]
+	ui = auto
+[alias]
+	co = checkout
+[push]
+	default = matching
+[ghq]
+	root = ~/.ghq
+	root = ~/.go/srco
