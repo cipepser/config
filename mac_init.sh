@@ -44,6 +44,9 @@ curl -L http://get.oh-my.fish | fish
 rm ~/.config/fish/config.fish
 ln -s  $CONFIG/fish/config.fish ~/.config/fish/config.fish
 
+## fisherman
+curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
+
 # atom
 rm ~/.atom/keymap.cson
 ln -s $CONFIG/atom/keymap.cson ~/.atom/keymap.cson
