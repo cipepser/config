@@ -51,4 +51,8 @@ npm install -g jshint
 # ctags
 brew install ctags
 alias ctags="`brew --prefix`/bin/ctags"
- 
+
+# fzf
+# ghqしたrepoへcdするために必要
+git clone https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
