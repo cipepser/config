@@ -47,6 +47,10 @@ ln -s  $CONFIG/fish/config.fish ~/.config/fish/config.fish
 ## fisherman
 curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
 
+# z (for fish)
+# 最近移動したディレクトリをpecoで拾うため
+fisher z
+
 # atom
 rm ~/.atom/keymap.cson
 ln -s $CONFIG/atom/keymap.cson ~/.atom/keymap.cson
