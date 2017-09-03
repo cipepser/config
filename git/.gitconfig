@@ -9,4 +9,4 @@
 	default = matching
 [ghq]
 	root = ~/.ghq
-	root = ~/.go/srco
+	root = ~/.go/src

@@ -39,12 +39,11 @@
     ]
     panel:
       currentHeight: "24.425574425574425vh"
-      currentWidth: "32.09090909090909vw"
+      currentWidth: "39.39393939393939vw"
       fontSize: "1.0em"
       orientation: "vertical"
   "linter-ui-default":
     panelHeight: 29
-    showPanel: true
   "save-session":
     dataSaveFolder: "/Users/respepic/.atom/packages/save-session/projects"
   welcome:
