@@ -1,33 +1,45 @@
+#-----------------------------------------------------
+# general configuration for zsh
+#-----------------------------------------------------
+## export original variable
+export CONFIG=$HOME/Documents/config
+source $CONFIG/zsh/env.zsh
+
+# alias
+source $CONFIG/zsh/alias.zsh
+
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+
+## Completion configuration
+autoload -U compinit
+compinit
+
+## color for ls command
+export CLICOLOR=1
+
+# color
+# autoload -U colors
+# colors
 #
-# Executes commands at the start of an interactive session.
+# # prompt user@host color
+# COLOR_USER="%{$fg_bold[blue]%}"
+# COLOR_RESET="%{$reset_color%}"
+# COLOR_RED="%{$fg[red]%}"
+# COLOR_CYAN="%{$fg[cyan]%}"
+# COLOR_PID="%{$fg[blue]%}"
 #
-# Authors:
-#   Sorin Ionescu <sorin.ionescu@gmail.com>
-#
+# # prompt configuration
+# PROMPT="${COLOR_USER}%n${COLOR_RESET}$ "
+# PROMPT2="${COLOR_RED}%_> ${COLOR_RESET}"
+# RPROMPT='[`rprompt-git-current-branch` %~]:${COLOR_CYAN}$(echo $$)${COLOR_RESET}'
+# SPROMPT="${COLOR_RED}correct?: %R -> %r [n,y,a,e]:${COLOR_RESET}"
 
-# Source Prezto.
-if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
-  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
-fi
 
-# Customize to your needs...
+#-----------------------------------------------------
+# plugin manager
+#-----------------------------------------------------
 
-# git 
-alias g='git'
-alias ga='git add'
+# source $CONFIG/zsh/prezto.zsh
 
-alias gc='git commit'
-alias gp='git push'
-alias gs='git status'
+source $CONFIG/zsh/zplug.zsh
 
-# docker
-alias d='docker'
-alias dm='docker-machine'
-alias dp='docker ps'
-alias di='docker images'
-
-# golang
-export GOPATH=$HOME/.go
-
-# SSLLOG for wireshark
-export SSLKEYLOGFILE=/Users/respepic/Documents/vagrant/div3element/premaster.txt
