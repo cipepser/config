@@ -10,6 +10,12 @@ source $OMF_PATH/init.fish
 # theme for oh-my-fish
 set fish_theme chain
 
+#-----------------------------------------------------
+# environment variables
+#-----------------------------------------------------
+## export original variable
+set -x CONFIG $HOME/Documents/config
+
 # golang
 set -x GOPATH $HOME/.go
 set -x PATH $PATH $GOPATH/bin
