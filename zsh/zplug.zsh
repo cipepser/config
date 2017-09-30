@@ -12,10 +12,13 @@ zplug "sindresorhus/pure"
 # 構文のハイライト(https://github.com/zsh-users/zsh-syntax-highlighting)
 zplug "zsh-users/zsh-syntax-highlighting"
 
-# タイプ補完
+# 補完
 zplug "zsh-users/zsh-autosuggestions"
+# ~/.zplug/repos/zsh-users/zsh-autosuggestions/zsh-autosuggestions.zshに以下を設定する
+# ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=242'
+
 zplug "zsh-users/zsh-completions"
-zplug "chrissicool/zsh-256color"
+# zplug "chrissicool/zsh-256color"
 
 # Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then
