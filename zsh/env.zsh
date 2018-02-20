@@ -7,3 +7,6 @@ export PATH=$PATH:$HOME/.cargo/bin
 
 # python
 export PATH=$PATH:/usr/local/opt/python/libexec/bin
+
+# geth
+export PATH=$PATH:/Users/respepic/Documents/sand/geth
