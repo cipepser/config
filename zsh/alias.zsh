@@ -15,5 +15,8 @@ alias dm='docker-machine'
 alias dp='docker ps'
 alias di='docker images'
 
+# kubernetes
+alias k='kubectl'
+
 # python
 alias p='python'
