@@ -11,6 +11,6 @@
     },
     "markdown.preview.scrollPreviewWithEditorSelection": false,
     "editor.wordWrap": "on",
-    "go.buildFlags": ['-ldflags="-cover"'],
+    "go.buildFlags": ["-cover"],
     "terminal.integrated.cursorStyle": "line"
 }
