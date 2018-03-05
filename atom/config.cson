@@ -45,6 +45,7 @@
       fontSize: "1.0em"
   "linter-ui-default":
     panelHeight: 29
+    showPanel: true
   "save-session":
     dataSaveFolder: "/Users/respepic/.atom/packages/save-session/projects"
   welcome:
