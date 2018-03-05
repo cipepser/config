@@ -1,0 +1,16 @@
+{
+    "atomKeymap.promptV3Features": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.formatOnPaste": true,
+    "workbench.colorTheme": "Atom One Dark",
+    "editor.renderWhitespace": "all",
+    "[go]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": false
+    },
+    "markdown.preview.scrollPreviewWithEditorSelection": false,
+    "editor.wordWrap": "on",
+    "go.buildFlags": ['-ldflags="-cover"'],
+    "terminal.integrated.cursorStyle": "line"
+}
