@@ -87,5 +87,15 @@
     {
         "key": "f5",
         "command": "go.test.file"
+    },
+    {
+        "key": "down",
+        "command": "-extension.vim_down",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && !suggestWidgetMultipleSuggestions && !suggestWidgetVisible"
+    },
+    {
+        "key": "up",
+        "command": "-extension.vim_up",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && !suggestWidgetMultipleSuggestions && !suggestWidgetVisible"
     }
 ]
