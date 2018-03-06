@@ -85,7 +85,7 @@
         "command": "workbench.action.terminal.focusPrevious"
     },
     {
-        "key": "shift+cmd+t",
+        "key": "f5",
         "command": "go.test.file"
     }
 ]
