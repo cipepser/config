@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+   <!-- ctrl + space : esc -->
+   <list>
+    <item>
+    <name>Ctrl-L+KANA also works as Escape</name>
+    <identifier>private.ctrl_KANA_to_escape</identifier>
+    <autogen>__KeyToKey__
+         KeyCode::JIS_KANA, ModifierFlag::CONTROL_L,
+         KeyCode::ESCAPE, KeyCode::JIS_EISUU
+    </autogen>
+  </item>
+  </list>
+
+   <!-- reverse mouse scroll -->
+   <devicevendordef>
+      <vendorname>LOGICOOL</vendorname>
+      <vendorid>0x046d</vendorid>
+   </devicevendordef>
+   <deviceproductdef>
+      <productname>M545</productname>
+      <productid>0xc52b</productid>
+   </deviceproductdef>
+
+ <list>
+    <item>
+       <name>use mouse button to foward</name>
+       <identifier>private.mouse_forward</identifier>
+       <device_only>DeviceVendor::LOGICOOL, DeviceProduct::M545</device_only>
+       <autogen>__KeyToKey__
+         KeyCode::COMMAND_L,
+         KeyCode::W, ModifierFlag::COMMAND_L
+       </autogen>
+
+    </item>
+ </list>
+
+</root>
