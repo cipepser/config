@@ -1,3 +1,6 @@
+# sand box
+export SAND=$HOME/Documents/sand
+
 # golang
 export GOPATH=$HOME/.go
 export PATH=$PATH:$GOPATH/bin
