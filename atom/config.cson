@@ -19,6 +19,8 @@
       "atom-ctags"
       "markdown-preview"
       "split-diff"
+      "gist"
+      "atom-runner"
     ]
     telemetryConsent: "no"
   editor:
@@ -30,6 +32,11 @@
     userId: "0f9e3be4-46f8-4118-95d6-644d4e6785d9"
   "file-types":
     fish: "source.shell"
+  gist:
+    token: "aaaf63dd0d9448fa06a4ef819186b71f904a3e68"
+  "gist-it":
+    newGistsDefaultToPrivate: true
+    userToken: "aaaf63dd0d9448fa06a4ef819186b71f904a3e68"
   "go-debug":
     dlvPath: "/usr/local/Cellar/delve/0.12.2/bin/dlv"
     panelInitialVisible: true
@@ -45,6 +52,7 @@
       fontSize: "1.0em"
   "linter-ui-default":
     panelHeight: 300
+    showPanel: true
   "save-session":
     dataSaveFolder: "/Users/respepic/.atom/packages/save-session/projects"
   welcome:
