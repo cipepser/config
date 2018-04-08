@@ -16,7 +16,6 @@
       "symbols-view"
       "japanese-wrap"
       "tree-view"
-      "atom-ctags"
       "markdown-preview"
       "split-diff"
       "gist"
@@ -36,7 +35,7 @@
     token: "aaaf63dd0d9448fa06a4ef819186b71f904a3e68"
   "gist-it":
     newGistsDefaultToPrivate: true
-    userToken: "aaaf63dd0d9448fa06a4ef819186b71f904a3e68"
+    userToken: "f0dab67de513c6dfe072b8d2054c7e77a07abf3a"
   "go-debug":
     dlvPath: "/usr/local/Cellar/delve/0.12.2/bin/dlv"
     panelInitialVisible: true
@@ -52,9 +51,11 @@
       fontSize: "1.0em"
   "linter-ui-default":
     panelHeight: 300
-    showPanel: true
   "save-session":
     dataSaveFolder: "/Users/respepic/.atom/packages/save-session/projects"
+  "switch-header-source":
+    newTabPending: true
+    samePane: true
   welcome:
     showOnStartup: false
   whitespace:
