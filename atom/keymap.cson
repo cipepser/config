@@ -33,3 +33,6 @@
   'cmd-d': 'golang:godef'
   'shift-cmd-D': 'golang:godef-return'
   'cmd-l': 'go-debug:toggle-panel'
+
+'atom-text-editor[data-grammar="source c"]:not(.mini)':
+  'cmd-d': 'autocomplete-clang:go-declaration'
