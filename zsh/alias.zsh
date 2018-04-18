@@ -20,3 +20,7 @@ alias k='kubectl'
 
 # python
 alias p='python'
+
+# bitcoin core
+alias bitd='bitcoind'
+alias bitc='bitcoin-cli'
