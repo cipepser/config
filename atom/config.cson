@@ -1,4 +1,6 @@
 "*":
+  "autocomplete-python":
+    useKite: false
   core:
     customFileTypes:
       "source.ini": [
@@ -18,8 +20,14 @@
       "tree-view"
       "markdown-preview"
       "split-diff"
-      "gist"
       "atom-runner"
+      "autocomplete-clang"
+      "clang-format"
+      "linter-clang"
+      "atom-ctags"
+      "switch-header-source"
+      "linter-jshint"
+      "linter-solidity"
     ]
     telemetryConsent: "no"
   editor:
