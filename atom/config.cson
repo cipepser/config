@@ -21,11 +21,8 @@
       "markdown-preview"
       "split-diff"
       "atom-runner"
-      "autocomplete-clang"
       "clang-format"
-      "linter-clang"
       "atom-ctags"
-      "switch-header-source"
       "linter-jshint"
       "linter-solidity"
     ]
