@@ -36,3 +36,6 @@
 
 'atom-text-editor[data-grammar="source c"]:not(.mini)':
   'cmd-d': 'autocomplete-clang:go-declaration'
+
+'atom-text-editor[data-grammar="source python"]:not(.mini)':
+  'cmd-d': 'autocomplete-python:go-to-definition'
