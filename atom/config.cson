@@ -22,9 +22,22 @@
       "split-diff"
       "atom-runner"
       "clang-format"
-      "atom-ctags"
       "linter-jshint"
       "linter-solidity"
+      "atom-ctags"
+      "autocomplete-clang"
+      "autocomplete-paths"
+      "build"
+      "build-cargo"
+      "autocomplete-python"
+      "gist-it"
+      "file-types"
+      "busy-signal"
+      "hyperclick"
+      "intentions"
+      "linter-clang"
+      "node_modules"
+      "atom-language-rust"
     ]
     telemetryConsent: "no"
   editor:
@@ -56,6 +69,8 @@
       fontSize: "1.0em"
   "linter-ui-default":
     panelHeight: 300
+  racer:
+    rustSrcPath: "/Users/respepic/.cargo/registry/src/github.com-1ecc6299db9ec823/"
   "save-session":
     dataSaveFolder: "/Users/respepic/.atom/packages/save-session/projects"
   "switch-header-source":
