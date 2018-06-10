@@ -19,3 +19,8 @@ inoremap <S-Left> <C-O>:action EditorLeftWithSelection<CR>
 inoremap <S-Right> <C-O>:action EditorRightWithSelection<CR>
 inoremap <S-Up> <C-O>:action EditorUpWithSelection<CR>
 inoremap <S-Down> <C-O>:action EditorDownWithSelection<CR>
+
+" whichwrapの無効化
+" set whichwrap=b,s,h,l,<,>,[,]
+inoremap <Left> <C-O>:action EditorLeft<CR>
+inoremap <Right> <C-O>:action EditorRight<CR>
