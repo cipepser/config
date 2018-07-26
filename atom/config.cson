@@ -33,6 +33,7 @@
       "linter-clang"
       "node_modules"
       "atom-language-rust"
+      "linter-rust"
     ]
     telemetryConsent: "no"
   editor:
@@ -50,7 +51,7 @@
     newGistsDefaultToPrivate: true
     userToken: "f0dab67de513c6dfe072b8d2054c7e77a07abf3a"
   "go-debug":
-    dlvPath: "/usr/local/Cellar/delve/0.12.2/bin/dlv"
+    dlvPath: "/Users/respepic/.go/bin/dlv"
     panelInitialVisible: true
   "go-plus":
     config:
@@ -58,6 +59,7 @@
     disabledBundledPackages: [
       "go-debug"
     ]
+    navigator: {}
     panel:
       currentHeight: "18.80597014925373vh"
       currentWidth: "32.083333333333336vw"
