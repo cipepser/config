@@ -44,3 +44,4 @@ export CLICOLOR=1
 source $CONFIG/zsh/zplug.zsh
 
 export PATH="/usr/local/opt/llvm/bin:$PATH"
+export GIT_EDITOR=vim
