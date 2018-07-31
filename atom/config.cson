@@ -65,7 +65,7 @@
       currentWidth: "32.083333333333336vw"
       fontSize: "1.0em"
   "linter-ui-default":
-    panelHeight: 300
+    panelHeight: 235
   racer:
     rustSrcPath: "/Users/respepic/.cargo/registry/src/github.com-1ecc6299db9ec823/"
   "save-session":
