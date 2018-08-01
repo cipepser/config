@@ -13,3 +13,9 @@ export PATH=$PATH:/usr/local/opt/python/libexec/bin
 
 # geth
 export PATH=$PATH:/Users/respepic/Documents/sand/geth
+
+# go-llvm
+export PATH="/usr/local/opt/llvm/bin:$PATH"
+
+# git
+export GIT_EDITOR=vim
