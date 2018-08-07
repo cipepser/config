@@ -42,3 +42,6 @@ export CLICOLOR=1
 # source $CONFIG/zsh/prezto.zsh
 
 source $CONFIG/zsh/zplug.zsh
+
+export EDITOR=atom
+eval "$(direnv hook zsh)"
