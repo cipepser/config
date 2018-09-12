@@ -34,10 +34,11 @@
       "node_modules"
       "atom-language-rust"
       "linter-rust"
+      "spell-check"
     ]
     telemetryConsent: "no"
   editor:
-    fontSize: 12
+    fontSize: 15
     invisibles: {}
     lineHeight: 1.4
     showInvisibles: true
