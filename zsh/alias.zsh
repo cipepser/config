@@ -24,3 +24,9 @@ alias p='python'
 # bitcoin core
 alias bitd='bitcoind'
 alias bitc='bitcoin-cli'
+
+# alias for directories
+setopt auto_cd
+setopt cdable_vars
+hash -d gop=~/.go/src/github.com/cipepser
+hash -d down=~/Downloads
