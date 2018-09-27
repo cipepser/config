@@ -38,7 +38,7 @@
     ]
     telemetryConsent: "no"
   editor:
-    fontSize: 15
+    fontSize: 12
     invisibles: {}
     lineHeight: 1.4
     showInvisibles: true
