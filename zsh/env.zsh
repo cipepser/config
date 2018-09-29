@@ -12,10 +12,13 @@ export PATH=$PATH:$HOME/.cargo/bin
 export PATH=$PATH:/usr/local/opt/python/libexec/bin
 
 # geth
-export PATH=$PATH:/Users/respepic/Documents/sand/geth
+export PATH=$PATH:$HOME/Documents/sand/geth
 
 # go-llvm
 export PATH="/usr/local/opt/llvm/bin:$PATH"
 
 # git
 export GIT_EDITOR=vim
+
+# Atom
+export EDITOR=atom
