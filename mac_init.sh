@@ -82,3 +82,7 @@ git clone https://github.com/junegunn/fzf.git ~/.fzf
 brew install mycli
 rm ~/.myclirc
 ln -s $CONFIG/mycli/.myclirc ~/.myclirc
+
+# ghkw
+brew tap kyoshidajp/ghkw
+brew install ghkw
