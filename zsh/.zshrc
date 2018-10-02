@@ -1,13 +1,18 @@
+
+#-----------------------------------------------------
+# import external config files
+#-----------------------------------------------------
+## set PATH to configuration files
+export CONFIG=$HOME/Documents/config
+
+source $CONFIG/zsh/env.zsh
+source $CONFIG/zsh/alias.zsh
+source $CONFIG/zsh/zplug.zsh
+# source $CONFIG/zsh/prezto.zsh
+
 #-----------------------------------------------------
 # general configuration for zsh
 #-----------------------------------------------------
-## export original variable
-export CONFIG=$HOME/Documents/config
-source $CONFIG/zsh/env.zsh
-
-# alias
-source $CONFIG/zsh/alias.zsh
-
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
 ## Completion configuration
@@ -34,14 +39,4 @@ export CLICOLOR=1
 # RPROMPT='[`rprompt-git-current-branch` %~]:${COLOR_CYAN}$(echo $$)${COLOR_RESET}'
 # SPROMPT="${COLOR_RED}correct?: %R -> %r [n,y,a,e]:${COLOR_RESET}"
 
-
-#-----------------------------------------------------
-# plugin manager
-#-----------------------------------------------------
-
-# source $CONFIG/zsh/prezto.zsh
-
-source $CONFIG/zsh/zplug.zsh
-
-export EDITOR=atom
 eval "$(direnv hook zsh)"
