@@ -35,6 +35,7 @@
       "atom-language-rust"
       "linter-rust"
       "spell-check"
+      "linter"
     ]
     telemetryConsent: "no"
   editor:
