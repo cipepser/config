@@ -15,10 +15,13 @@ export PATH=$PATH:/usr/local/opt/python/libexec/bin
 export PATH=$PATH:$HOME/Documents/sand/geth
 
 # go-llvm
-export PATH="/usr/local/opt/llvm/bin:$PATH"
+# export PATH="/usr/local/opt/llvm/bin:$PATH"
 
 # git
 export GIT_EDITOR=vim
 
 # Atom
 export EDITOR=atom
+
+# haskell
+export PATH=$PATH:$HOME/.local/bin
