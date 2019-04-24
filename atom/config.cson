@@ -66,6 +66,7 @@
       currentHeight: "18.80597014925373vh"
       currentWidth: "32.083333333333336vw"
       fontSize: "1.0em"
+    skipCodeFormatCheck: true
   "linter-ui-default":
     panelHeight: 300
   racer:
