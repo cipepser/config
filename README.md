@@ -16,7 +16,7 @@
 - appcleaner
 - slack
 - alfred
-- bettertouchtool
+- bettertouchtool: システム環境設定のユーザとグループで起動時に自動的に開くよう追加
 - karabiner
 - firefox
 - discord
@@ -30,3 +30,20 @@
 - idea
 - docker for mac
 - line
+
+### iterm2
+
+Preferences -> Profiles -> General -> Working Directory  
+で`Reuse previous session's directory`を選択
+
+Preferences -> Appearance  
+で`Show tab bar even when there is only one tab`を選択
+
+Preferences -> Profile -> Text  
+で`Vertial bar`と`Blinking cursor`を選択
+
+[Mac iTerm で iceberg のテーマを使う \- Qiita](https://qiita.com/tarosaiba/items/fcc399006025ebe9152c)を参考にカラーテーマを変更。
+
+### VS code
+
+[ブログ](https://cipepser.hatenablog.com/entry/setting-for-vscode)にまとめてある。
