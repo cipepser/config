@@ -1,3 +1,5 @@
+export ZPLUG_HOME=/usr/local/opt/zplug
+source $ZPLUG_HOME/init.zsh
 
 #-----------------------------------------------------
 # import external config files
@@ -25,7 +27,7 @@ export CLICOLOR=1
 # color
 # autoload -U colors
 # colors
-#
+# 
 # # prompt user@host color
 # COLOR_USER="%{$fg_bold[blue]%}"
 # COLOR_RESET="%{$reset_color%}"
