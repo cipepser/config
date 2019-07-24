@@ -26,10 +26,15 @@ alias p='python'
 
 # bitcoin core
 alias bitd='bitcoind'
-alias bitc='bitcoin-cli'
+alias bcli='bitcoin-cli'
 
 # alias for directories
 setopt auto_cd
 setopt cdable_vars
 hash -d gop=~/.go/src/github.com/cipepser
 hash -d down=~/Downloads
+
+# editor/IDE
+alias idea='open -a "`ls -dt /Applications/IntelliJ\ IDEA*|head -1`"'
+alias goland='open -a "`ls -dt /Applications/Goland.app|head -1`"'
+alias code='open -a "`ls -dt /Applications/Visual\ Studio\ Code.app|head -1`"'
