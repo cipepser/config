@@ -48,6 +48,8 @@ brew install zplug
 brew install tree
 brew install gibo
 brew install graphviz
+brew install moreutils
+brew install iproute2mac
 
 # ctags
 brew install ctags
@@ -79,3 +81,6 @@ defaults write -g InitialKeyRepeat -int 12
 
 # 隠しファイルの表示
 defaults write com.apple.finder AppleShowAllFiles TRUE 
+
+# haskell
+curl -sSL https://get.haskellstack.org/ | sh
