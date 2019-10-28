@@ -25,6 +25,8 @@ export EDITOR=atom
 
 # haskell
 export PATH=$PATH:$HOME/.local/bin
+export PATH=$(stack path --local-bin):$PATH
 
 # Application
 export PATH=$PATH:/Applications
+
