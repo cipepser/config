@@ -50,6 +50,10 @@ brew install gibo
 brew install graphviz
 brew install moreutils
 brew install iproute2mac
+brew install fd
+brew install exa
+brew install bat
+brew install tokei
 
 # ctags
 brew install ctags
