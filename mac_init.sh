@@ -68,6 +68,10 @@ ln -s $HOME/Documents/config/zsh/.zshrc $HOME/.zshrc
 git clone https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 
+# peco
+mkdir ~/.peco
+ln -s $CONFIG/peco/config.json ~/.peco/config.json
+
 # atom
 rm ~/.atom/keymap.cson
 ln -s $CONFIG/atom/keymap.cson ~/.atom/keymap.cson
