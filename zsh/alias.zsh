@@ -13,7 +13,7 @@ alias gr='git rm'
 alias gd='git diff'
 alias gcho='git checkout'
 alias gchob='git checkout -b'
-alias gf='git '
+alias gf='git fetch'
 alias gb='git branch -a'
 
 # docker
