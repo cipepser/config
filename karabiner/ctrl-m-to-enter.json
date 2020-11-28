@@ -1,0 +1,18 @@
+{
+	"title": "Change ctrl+M to Enter",
+	"rules": [{
+		"description": "Change ctrl+M key to Enter key",
+		"manipulators": [{
+			"type": "basic",
+			"from": {
+				"key_code": "m",
+				"modifiers": {
+					"mandatory": ["control"]
+				}
+			},
+			"to": [{
+				"key_code": "return_or_enter"
+			}]
+		}]
+	}]
+}
