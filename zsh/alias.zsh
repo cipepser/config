@@ -17,6 +17,7 @@ alias gf='git fetch'
 alias gb='git branch -a'
 alias gbd='git branch -D'
 alias gsw='git switch'
+alias gswc='git switch -c'
 alias grs='git restore'
 
 # docker
