@@ -16,6 +16,8 @@ alias gchob='git checkout -b'
 alias gf='git fetch'
 alias gb='git branch -a'
 alias gbd='git branch -D'
+alias gsw='git switch'
+alias grs='git restore'
 
 # docker
 alias d='docker'
