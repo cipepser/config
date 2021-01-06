@@ -48,3 +48,7 @@ alias code='open -a "`ls -dt /Applications/Visual\ Studio\ Code.app|head -1`"'
 # exa
 alias exa='exa -lha --git'
 alias la='exa'
+
+# isucon
+alias ns='notify_slack -snippet'
+alias nsd='notify_slack'
