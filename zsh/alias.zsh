@@ -25,6 +25,7 @@ alias d='docker'
 alias dm='docker-machine'
 alias dp='docker ps'
 alias di='docker images'
+alias dn='docker network'
 alias dc='docker-compose'
 
 # kubernetes
