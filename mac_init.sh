@@ -80,6 +80,9 @@ ln -s $CONFIG/atom/keymap.cson ~/.atom/keymap.cson
 curl https://sh.rustup.rs -sSf | sh
 source $HOME/.cargo/env
 
+# udeps
+cargo install cargo-udeps --locked
+
 # karabiner
 ln -s $CONFIG/karabiner/ctrl-kana-to-esc.json $HOME/.config/karabiner/assets/complex_modifications/ctrl-kana-to-esc.json
 
