@@ -43,6 +43,8 @@ setopt auto_cd
 setopt cdable_vars
 hash -d gop=~/.go/src/github.com/cipepser
 hash -d down=~/Downloads
+hash -d sand=$SAND
+hash -d config=$CONFIG
 
 # editor/IDE
 alias idea='open -a "`ls -dt /Applications/IntelliJ\ IDEA*|head -1`"'
