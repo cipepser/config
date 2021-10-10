@@ -11,6 +11,9 @@ export PATH=$PATH:$HOME/.cargo/bin
 
 # python
 export PATH=$PATH:/usr/local/opt/python/libexec/bin
+export PYENV_ROOT=${HOME}/.pyenv
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
 # geth
 export PATH=$PATH:$HOME/Documents/sand/geth
@@ -22,7 +25,7 @@ export PATH=$PATH:$HOME/Documents/sand/geth
 export GIT_EDITOR=vim
 
 # Atom
-export EDITOR=atom
+export EDITOR=vim
 
 # haskell
 export PATH=$PATH:$HOME/.local/bin
