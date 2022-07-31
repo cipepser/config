@@ -13,7 +13,7 @@ export PATH=$PATH:$HOME/.cargo/bin
 export PATH=$PATH:/usr/local/opt/python/libexec/bin
 export PYENV_ROOT=${HOME}/.pyenv
 eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+# eval "$(pyenv virtualenv-init -)"
 
 # geth
 export PATH=$PATH:$HOME/Documents/sand/geth

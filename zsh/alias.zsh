@@ -32,7 +32,8 @@ alias dc='docker-compose'
 alias k='kubectl'
 
 # python
-alias p='python'
+alias p='python3'
+alias pip='pip3'
 
 # bitcoin core
 alias bitd='bitcoind'
@@ -45,6 +46,7 @@ hash -d gop=~/.go/src/github.com/cipepser
 hash -d down=~/Downloads
 hash -d sand=$SAND
 hash -d config=$CONFIG
+hash -d samp=$SAND/mysamples
 
 # editor/IDE
 alias idea='open -a "`ls -dt /Applications/IntelliJ\ IDEA*|head -1`"'

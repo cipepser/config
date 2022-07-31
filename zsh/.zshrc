@@ -1,4 +1,4 @@
-export ZPLUG_HOME=/usr/local/opt/zplug
+export ZPLUG_HOME=/opt/homebrew/opt/zplug
 source $ZPLUG_HOME/init.zsh
 
 #-----------------------------------------------------
@@ -11,6 +11,8 @@ source $CONFIG/zsh/env.zsh
 source $CONFIG/zsh/alias.zsh
 source $CONFIG/zsh/zplug.zsh
 # source $CONFIG/zsh/prezto.zsh
+source $CONFIG/zsh/env.zsh
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 #-----------------------------------------------------
 # general configuration for zsh
@@ -18,8 +20,12 @@ source $CONFIG/zsh/zplug.zsh
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
 ## Completion configuration
-autoload -U compinit
-compinit
+if type brew &>/dev/null; then
+	FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+
+	autoload -Uz compinit
+	compinit
+fi
 
 ## color for ls command
 export CLICOLOR=1
@@ -27,14 +33,14 @@ export CLICOLOR=1
 # color
 # autoload -U colors
 # colors
-# 
+
 # # prompt user@host color
 # COLOR_USER="%{$fg_bold[blue]%}"
 # COLOR_RESET="%{$reset_color%}"
 # COLOR_RED="%{$fg[red]%}"
 # COLOR_CYAN="%{$fg[cyan]%}"
 # COLOR_PID="%{$fg[blue]%}"
-#
+
 # # prompt configuration
 # PROMPT="${COLOR_USER}%n${COLOR_RESET}$ "
 # PROMPT2="${COLOR_RED}%_> ${COLOR_RESET}"

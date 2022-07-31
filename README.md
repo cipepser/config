@@ -44,6 +44,15 @@ Preferences -> Profile -> Text
 
 [Mac iTerm で iceberg のテーマを使う \- Qiita](https://qiita.com/tarosaiba/items/fcc399006025ebe9152c)を参考にカラーテーマを変更。
 
+Preferences -> Profiles -> Terminal -> Notifications
+で`Silence bell`を選択
+
+### sshの設定
+
+- 鍵を生成して、githubに登録（`~/.ssh/config`も`HostName`, `IdentityFile`, `User`を設定。 [github](https://docs.github.com/ja/enterprise-cloud@latest/authentication/authenticating-with-saml-single-sign-on/authorizing-an-ssh-key-for-use-with-saml-single-sign-on)側で `Enable SSH` が必要なことに注意）
+
+
 ### VS code
 
 [ブログ](https://cipepser.hatenablog.com/entry/setting-for-vscode)にまとめてある。
+→2022/7/29現在、Githubアカウント経由でSettings Syncを利用しているので手動設定不要

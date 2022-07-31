@@ -1,6 +1,8 @@
 # brew本体
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 git -C "$(brew --repo homebrew/core)" fetch --unshallow
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # ディレクトリ
 mkdir $HOME/.go
@@ -18,10 +20,15 @@ git clone https://github.com/cipepser/config.git
 # zsh
 brew install zsh zsh-autosuggestions zsh-completions zsh-syntax-highlighting colordiff reattach-to-user-namespace tmux
 which zsh | xargs chsh -s
+chmod 755 /opt/homebrew/share
 
 ## zplug プラグイン管理のため
 cd $HOME
 git clone https://github.com/zplug/zplug.git .zplug
+
+## zprezto
+git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+setopt EXTENDED_GLOB
 
 ## z for zsh
 ## 移動したディレクトリを覚えておくため
@@ -54,6 +61,9 @@ brew install fd
 brew install exa
 brew install bat
 brew install tokei
+brew install pyenv
+brew install aespipe
+brew install python
 
 # ctags
 brew install ctags
@@ -72,10 +82,6 @@ git clone https://github.com/junegunn/fzf.git ~/.fzf
 mkdir ~/.peco
 ln -s $CONFIG/peco/config.json ~/.peco/config.json
 
-# atom
-rm ~/.atom/keymap.cson
-ln -s $CONFIG/atom/keymap.cson ~/.atom/keymap.cson
-
 # rust
 curl https://sh.rustup.rs -sSf | sh
 source $HOME/.cargo/env
@@ -85,6 +91,7 @@ cargo install cargo-udeps --locked
 
 # karabiner
 ln -s $CONFIG/karabiner/ctrl-kana-to-esc.json $HOME/.config/karabiner/assets/complex_modifications/ctrl-kana-to-esc.json
+ln -s $CONFIG/karabiner/ctrl-m-to-enter.json $HOME/.config/karabiner/assets/complex_modifications/ctrl-m-to-enter.json
 
 # カーソル速度
 defaults write -g KeyRepeat -int 1
@@ -95,3 +102,23 @@ defaults write com.apple.finder AppleShowAllFiles TRUE
 
 # haskell
 curl -sSL https://get.haskellstack.org/ | sh
+
+# python
+cd $HOME
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+python3 get-pip.py
+rm get-pip.py
+
+# dbt
+mkdir $HOME/.dbt
+touch $HOME/.dbt/touch/profiles.yml
+pip3 install dbt-bigquery
+brew tap dbt-labs/dbt
+brew install dbt-postgres
+brew link --overwrite dbt-postgres
+brew install --cask google-cloud-sdk
+source $CONFIG/zsh/env.zsh
+
+gcloud auth application-default login --scopes=https://www.googleapis.com/auth/bigquery,https://www.googleapis.com/auth/drive.readonly,https://www.googleapis.com/auth/iam.test
+python3 -m pip install dbt-bigquery dbt-rpc
+
