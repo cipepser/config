@@ -52,7 +52,7 @@ bindkey '^r' peco_select_history
 source ~/.zsh.d/z.sh
 
 function peco_recentd() {
-  rd=`z -l | peco | awk '{ print $2 }'`
+  rd=`z -l | sort -nr | peco | awk '{ print $2 }'`
   if [ -n "$rd" ]; then
     BUFFER+="cd $rd"
     zle accept-line
